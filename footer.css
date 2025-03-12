@@ -9,7 +9,7 @@ body {
     background-color: #033d3e;
     color: white;
     padding: 40px 80px;
-    padding-bottom: 0;
+    padding-bottom: 10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,20 +19,24 @@ body {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     max-width: 1200px;
 }
 
 .footer-left {
     flex: 1;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-left p {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     font-weight: 400;
-    margin-bottom: 50px;
+    margin: 0;
 }
+
 .footer-left p:nth-child(3) {
     font-size: 1rem;
     font-weight: 400;
@@ -43,20 +47,15 @@ body {
     font-weight: 600;
 }
 
-.social-icons {
-    margin: 15px 0;
-}
-
-.social-icons a {
+.social-icons a i{
     color: white;
-    font-size: 1.5rem;
-    margin-right: 15px;
+    font-size: 2rem;
+    margin: 0 15px 0 0;
     text-decoration: none;
 }
 
 .copyright {
     font-size: 0.9rem;
-    margin-top: 20px;
 }
 
 .footer-right {

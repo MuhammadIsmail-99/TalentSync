@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: #ffffff;
+    min-height: 100vh;
+    max-width: 2000px;
+}
+
+aside {
+    width: 320px;
+    background-color: #003634; 
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh; 
+}
+
+.logo {
+    width: 60%;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+aside p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+aside p a {
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+aside nav {
+    width: 70%;
+    margin-top: 20px;
+}
+
+aside nav a {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+aside nav a:hover{
+    background-color: #1cdeb0;
+}
+
+aside button {
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-top: auto;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+    height: 200px; 
+}
+
+.main-content div {
+    background-color: #003634;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 45%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.main-content div h3 {
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 1.8rem;
+}
+
+
+.main-content div p {
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-size: 5rem;
+}
+
+.job-table {
+    background-color: #1dddb0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.job-table table {
+    width: 100%;
+    border-collapse: collapse;
+    flex-grow: 1;
+}
+
+.job-table th,
+.job-table td {
+    font-size: large;
+    padding: 15px 40px;
+    text-align: left;
+    border-bottom: none;
+}
+
+.job-table th{
+    background-color: #003634;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-weight: 400;
+    font-size: large;
+}
+
+.job-table th:nth-child(1) {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.job-table th:nth-child(3) {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.view-all-button-container {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.view-all-button {
+    background-color: #003634;
+    color: white;
+    font-size: large;
+    border: none;
+    padding: 10px 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.add-job-button {
+    background-color: #003634;
+    color: white;
+    border: none;
+    font-size: large;
+    padding: 10px 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .login-container, .image-container {
+        width: 100%;
+    }
+
+    .image-container {
+        height: 300px; 
+    }
+}
