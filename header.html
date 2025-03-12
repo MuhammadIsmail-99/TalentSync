@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentSync Header</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .navbar {
+            background-color: #123a40;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .navbar-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-links li {
+            margin-left: 20px;
+        }
+
+        .navbar-links a {
+            color: white;
+            text-decoration: none;
+            font-size: larger;
+            padding: 8px 12px;
+            border-radius: 50px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar-links a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar-links a.take-test {
+            background-color: #fff6e1;
+            color: black;
+            padding: 8px 25px;
+        }
+
+        .take-test {
+            padding: 20px;
+        }
+
+
+        .navbar-links a.take-test:hover {
+            background-color: #f0e6d2;
+        }
+
+        @media (max-width: 1400px) {
+            .navbar {
+                padding: 10px 50px;
+            }
+
+            .navbar-links li {
+                margin-left: 25px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 20px;
+            }
+
+            .navbar-links {
+                flex-direction: column;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .navbar-links li {
+                margin-left: 0;
+                margin-top: 10px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .navbar-links a {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="images/logo.svg" alt="TalentSync Logo">
+        </div>
+        <ul class="navbar-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="take-test">Take Test</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
