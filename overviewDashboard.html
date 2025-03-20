@@ -13,6 +13,33 @@
             font-family: "Poppins", sans-serif;
             background-color: white;
         }
+
+        button {
+            font-size: 18px;
+            display: inline-block;
+            outline: 0;
+            border: 0;
+            cursor: pointer;
+            will-change: box-shadow, transform;
+            background: radial-gradient(100% 100% at 100% 0%, #003634 0%, #003634 100%);
+            box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(0 54 52 / 50%);
+            padding: 0 2em;
+            border-radius: 0.3em;
+            color: #fff;
+            height: 2.6em;
+            text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+            transition: box-shadow 0.15s ease, transform 0.15s ease;
+        }
+
+        button:hover {
+            box-shadow: 0px 0.1em 0.2em rgb(0 54 52 / 40%), 0px 0.4em 0.7em -0.1em rgb(0 54 52 / 30%), inset 0px -0.1em 0px #003634;
+            transform: translateY(-0.1em);
+        }
+
+        button:active {
+            box-shadow: inset 0px 0.1em 0.6em #003634;
+            transform: translateY(0em);
+        }
     </style>
 </head>
 
@@ -29,17 +56,17 @@
                 <p class="text-lg">John Smith <i class="fa-regular fa-pen-to-square"></i></p>
             </div>
             <nav class="flex flex-col w-full">
-                <a href="#" class="bg-teal-500 text-white py-2 px-4 rounded mb-2" style="border-radius: 0.5rem;color: rgb(0 0 0); text-align: center;">Overview</a >
-                <a href="#" class="bg-white text-teal-900 py-2 px-4 rounded mb-2" style="border-radius: 0.5rem;color: rgb(0 0 0); text-align: center;">Active Jobs</a >
-                <a href="#" class="bg-white text-teal-900 py-2 px-4 rounded mb-2" style="border-radius: 0.5rem;color: rgb(0 0 0); text-align: center;">Applicants</a >
-                <a href="#" class="bg-white text-teal-900 py-2 px-4 rounded mb-2" style="border-radius: 0.5rem;color: rgb(0 0 0); text-align: center;">Profile &amp; Settings</a >
+                <a href="overviewDashboard.html" class="bg-[#1cdeb0] text-white py-2 px-4 rounded-xl mb-2" style="border-radius: 0.5rem;color: rgb(0 0 0); text-align: center;">Overview</a >
+                <a href="aciveJobsDashboard.html" class="bg-white text-teal-900 py-2 px-4 rounded-xl mb-2" style="border-radius: 0.5rem;color: rgb(0 0 0); text-align: center;">Active Jobs</a >
+                <a href="applicantsDashboard.html" class="bg-white text-teal-900 py-2 px-4 rounded-xl mb-2" style="border-radius: 0.5rem;color: rgb(0 0 0); text-align: center;">Applicants</a >
+                <a href="#" class="bg-white text-teal-900 py-2 px-4 rounded-xl mb-2" style="border-radius: 0.5rem;color: rgb(0 0 0); text-align: center;">Profile &amp; Settings</a >
             </nav>
             <button class="mt-auto text-white">Sign Out</button>
         </div>
         <!-- Main Content -->
         <div class="flex-1 p-6 ml-[25%] overflow-y-auto">
             <div class="grid grid-cols-2 gap-4 mb-6">
-                <div class="bg-[#003634] text-white p-8 rounded-lg text-center h-48 flex flex-col justify-center">
+                <div class="bg-[#003634] text-white p-8 rounded-xl text-center h-48 flex flex-col justify-center">
                     <p class="text-xl">
                         Job Posted
                     </p>
@@ -47,7 +74,7 @@
                         67
                     </p>
                 </div>
-                <div class="bg-[#003634] text-white p-8 rounded-lg text-center h-48 flex flex-col justify-center">
+                <div class="bg-[#003634] text-white p-8 rounded-xl text-center h-48 flex flex-col justify-center">
                     <p class="text-xl">
                         Applicants
                     </p>
@@ -56,13 +83,13 @@
                     </p>
                 </div>
             </div>
-            <div class="bg-[#1dddb0] p-6 rounded-lg overflow-x-auto" style="padding: 0;">
+            <div class="bg-[#1dddb0] p-6 rounded-xl overflow-x-auto" style="padding: 0;">
                 <table class="min-w-full">
                     <thead class="bg-[#003634] text-white">
                         <tr>
-                            <th class="px-4 py-2 text-left " style="border-bottom-left-radius: 10px; border-top-left-radius: 10px;">Jobs</th>
-                            <th class="px-4 py-2 text-left ">Status</th>
-                            <th class="px-4 py-2 text-left " style="border-bottom-right-radius: 10px; border-top-right-radius: 10px;">Date Posted</th>
+                            <th class="px-4 py-2 text-left font-normal" style="border-bottom-left-radius: 10px; border-top-left-radius: 10px;">Jobs</th>
+                            <th class="px-4 py-2 text-left font-normal">Status</th>
+                            <th class="px-4 py-2 text-left font-normal" style="border-bottom-right-radius: 10px; border-top-right-radius: 10px;">Date Posted</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -88,9 +115,9 @@
                         </tr>
                     </tbody>
                 </table>
-                <button class="bg-[#003634] text-white py-2 px-4 rounded mt-4" style="margin:10px; width: 150px; border-radius: 10px;">View All</button>
+                <button class="bg-[#003634] text-white py-2 px-4 rounded-xl mt-4 w-32" style="margin:10px; width: 150px; border-radius: 10px;">View All</button>
             </div>
-            <button class="bg-[#003634] text-white py-2 px-4 rounded mt-6" style="width: 200px; border-radius: 10px;">Add New Job</button>
+            <button class="bg-[#003634] text-white py-2 px-4 rounded-xl mt-6 w-32" style="width: 200px; border-radius: 10px;" onclick="window.location.href='addJobRoleInfo.html'">Add New Job</button>
         </div>
     </div>
 </body>
