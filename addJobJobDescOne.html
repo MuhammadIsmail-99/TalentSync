@@ -118,7 +118,7 @@
                         </div>
                     </div>
                     <div class="flex justify-between mt-6">
-                        <button class="bg-[#003634] text-white px-6 py-2 rounded-xl" onclick="window.location.href='addJobRoleInfo.html'">Back</button>
+                        <button class="bg-[#003634] text-white px-6 py-2 rounded-xl" onclick="window.location.href='addJobRoleInfo.html'">Previous</button>
                         <button class="bg-[#003634] text-white px-6 py-2 rounded-xl" onclick="window.location.href='addJobJobDescTwo.html'">Next</button>
                     </div>
                 </div>
@@ -130,17 +130,17 @@
         document.addEventListener('DOMContentLoaded', function () {
             const skillInput = document.getElementById('skill-input');
             const skillContainer = document.getElementById('skill-container');
-            const messageContainer = document.getElementById('message-container'); // Add message container
+            const messageContainer = document.getElementById('message-container'); 
     
             skillInput.addEventListener('keypress', function (e) {
                 if (e.key === 'Enter' && skillInput.value.trim() !== '') {
                     const skillName = skillInput.value.trim();
                     if (isSkillDuplicate(skillName)) {
-                        showMessage('Skill already exists.', 'red'); // Show error message
+                        showMessage('Skill already exists.', 'red');
                     } else {
                         addSkill(skillName);
                         skillInput.value = '';
-                        clearMessage(); // Clear message
+                        clearMessage(); 
                     }
                 }
             });
